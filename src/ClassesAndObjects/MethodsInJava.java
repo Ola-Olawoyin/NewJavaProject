@@ -39,10 +39,12 @@ public class MethodsInJava {
 		
 		//scan.close();
 		
-		MethodsInJava mij = new MethodsInJava();
+		//MethodsInJava mij = new MethodsInJava();
 		
-		System.out.println(mij.concatinatedString("Ola ", "Olawoyin"));
+	
 		
+		System.out.println(creatingObject().concatinatedString("Ola", "Olawoyin"));
+// Note: To store value from a method in a variable, the method must return a value		
 //		int result = mij.sumTwoDigits(num1, num2);
 //		mij.printArithmeticResult(result);	
 //		
@@ -99,9 +101,16 @@ public class MethodsInJava {
 	
 	public String concatinatedString(String stringOne, String StringTwo) {
 		
-		String concString = stringOne + StringTwo;
+		String concString = stringOne +" "+ StringTwo;
 		
 		return concString;
+	}
+	
+	public static MethodsInJava creatingObject() {
+		
+		MethodsInJava mij = new MethodsInJava();
+		
+		return mij;
 	}
 
 }
