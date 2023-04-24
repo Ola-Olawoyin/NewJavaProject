@@ -109,7 +109,7 @@ public class MethodsInJava {
 	public static MethodsInJava creatingObject() {
 		
 		MethodsInJava mij = new MethodsInJava();
-		
+		//System.out.println(mij);
 		return mij;
 	}
 
